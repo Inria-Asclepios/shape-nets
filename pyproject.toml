@@ -1,0 +1,37 @@
+[project]
+name = "shape-nets"
+version = "0.1.0"
+description = "This is the code for the paper 'Improving Neural Network Surface Processing with Principal Curvatures'"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "libigl>=2.5.1",
+    "natsort>=8.4.0",
+    "pandas>=2.2.3",
+    "polyscope>=2.3.0",
+    "potpourri3d>=1.1.0",
+    "pymeshfix>=0.17.0",
+    "pyvista>=0.44.1",
+    "robust-laplacian>=0.2.7",
+    "scikit-learn>=1.5.2",
+    "torch-cluster",
+    "torch-geometric>=2.6.1",
+    "torch-scatter",
+    "torch-sparse",
+    "torch>=2.5.1",
+    "torchmetrics>=1.5.1",
+    "tqdm>=4.66.6",
+    "trimesh>=4.5.1",
+]
+
+[tool.uv.sources]
+torch-scatter = { git = "https://github.com/rusty1s/pytorch_scatter.git" }
+torch-sparse = { git = "https://github.com/rusty1s/pytorch_sparse.git" }
+torch-cluster = { git = "https://github.com/rusty1s/pytorch_cluster.git" }
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["shapecentral*"]
+exclude = ["experiments*"]
