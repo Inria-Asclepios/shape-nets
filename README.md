@@ -1,4 +1,4 @@
-# Shape networks
+# Shape-nets
 
 This is the repository for the experiments from the paper: "Improving Network Surface Processing with Principal Curvatures"
 
@@ -47,6 +47,9 @@ scales = np.logspace(-2, 0, num=16)  # num=dimension of the HKS
 power_coefs = np.exp(-evals * scales)
 hks = power_coefs * (evecs * evecs)
 ```
+
+For the **SHOT Descriptors**, we used the implementation proposed by [Point Cloud Library](https://github.com/PointCloudLibrary/pcl). 
+To be found [here](https://pointclouds.org/documentation/classpcl_1_1_s_h_o_t_estimation_base.html)
 
 
 ## Installation
