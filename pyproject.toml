@@ -1,5 +1,5 @@
 [project]
-name = "shape-nets"
+name = "shapecentral"
 version = "0.1.0"
 description = "This is the code for the paper 'Improving Neural Network Surface Processing with Principal Curvatures'"
 readme = "README.md"
