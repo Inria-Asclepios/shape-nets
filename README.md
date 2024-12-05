@@ -1,6 +1,7 @@
 # Shape-nets
 
-This is the repository for the experiments from the paper: "Improving Network Surface Processing with Principal Curvatures"
+This is the repository for the experiments from the paper: "Improving Network Surface Processing with Principal Curvatures". 
+You can find the paper [here](https://hal.science/hal-04820475)
 
 
 ## Models
